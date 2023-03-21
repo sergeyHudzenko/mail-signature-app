@@ -167,7 +167,6 @@ export default class SignatureController extends BaseApi {
 		additionalCors(res);
 		try {
 			await Signatures.removeSignature(id)
-			console.log(123)
 			res.status(200).json({ message: 'Removed succesfully' });
 		} catch (error) {
 			console.error({ message: 'Internal server error' });
