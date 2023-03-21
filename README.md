@@ -43,8 +43,24 @@ What's done:
 # API
 <br>
 <br>
-- (GET)  http://localhost:30001/api/profile/user 
-<u>Recieving user</u> <br><br>
+- (GET)  http://localhost:30002/api/profile/user 
+Recieving user <br /><br />
 Requirements for request:<br>
 <b><i>Authorization Bearer Token</i></b>
+<br><br>
+- (POST)  http://localhost:30001/api/auth/sign-in
+Sign in <br /><br />
+Requirements for request:<br>
+Fields: <b><i>email, password</i></b><br>
+<br><br>
+- (POST)  http://localhost:30001/api/auth/sign-up
+Sign up <br /><br />
+Requirements for request:<br>
+Fields: <b><i>email, password, fullname</i></b><br>
+<br><br>
+- (POST)  http://localhost:30001/api/auth/token
+Check token <br /><br />
+Requirements for request:<br>
+<b><i>Authorization Bearer Token</i></b>
+<br><br>
 
