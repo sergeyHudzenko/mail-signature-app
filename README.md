@@ -44,22 +44,22 @@ What's done:
 <br>
 <br>
 - (GET)  http://localhost:30002/api/profile/user 
-Recieving user <br /><br />
+<br>Recieving user<br>
 Requirements for request:<br>
 <b><i>Authorization Bearer Token</i></b>
 <br><br>
 - (POST)  http://localhost:30001/api/auth/sign-in
-Sign in <br /><br />
+<br>Sign in<br>
 Requirements for request:<br>
 Fields: <b><i>email, password</i></b><br>
 <br><br>
 - (POST)  http://localhost:30001/api/auth/sign-up
-Sign up <br /><br />
+<br>Sign up <br>
 Requirements for request:<br>
 Fields: <b><i>email, password, fullname</i></b><br>
 <br><br>
 - (POST)  http://localhost:30001/api/auth/token
-Check token <br /><br />
+<br>Check token<br>
 Requirements for request:<br>
 <b><i>Authorization Bearer Token</i></b>
 <br><br>
