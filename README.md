@@ -32,10 +32,10 @@ What's done:
 # Structure
 <br>
 <br>
-- src/abstract - files where abstract classes are located
-- src/components - components for building APIs. Each class must extend the BaseApi class. It contains the necessary methods for building the API
-- src/config - This is where the class with the application configurations is located
-- src/database - This is where the class for working with the database is located. It implements the Singleton pattern, initializes connections and the initial migration required for the service
-- src/lib - This is the directory where you can find useful classes for simplifying the system. 
-- src/models - a class for working with the database
-- src/utils - helper classes
+- src/abstract -- files where abstract classes are located <br>
+- src/components -- components for building APIs. Each class must extend the BaseApi class. It contains the necessary methods for building the API<br>
+- src/config -- This is where the class with the application configurations is located<br>
+- src/database -- This is where the class for working with the database is located. It implements the Singleton pattern, initializes connections and the initial migration required for the service<br>
+- src/lib -- This is the directory where you can find useful classes for simplifying the system. <br>
+- src/models -- a class for working with the database<br>
+- src/utils -- helper classes<br>
