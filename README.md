@@ -63,4 +63,32 @@ Fields: <b><i>email, password, fullname</i></b><br>
 Requirements for request:<br>
 <b><i>Authorization Bearer Token</i></b>
 <br><br>
-
+- (POST)  http://localhost:30003/api/mail/signature
+<br>Create signature<br>
+Requirements for request:<br>
+<b><i>Authorization Bearer Token</i></b><br>
+Fields: <b><i>fullName, title, company, email, phone, address, layout</i></b><br>
+<br><br>
+- (POST)  http://localhost:30003/api/mail/signature/render
+<br>Render HTML Signature and return to user<br>
+Requirements for request:<br>
+<b><i>Authorization Bearer Token</i></b><br>
+Fields: <b><i>fullName, title, company, email, phone, address, layout</i></b><br>
+<br><br>
+- (GET)  http://localhost:30003/api/mail/signatures
+<br>Get user's signatures<br>
+Requirements for request:<br>
+<b><i>Authorization Bearer Token</i></b>
+<br><br>
+- (GET)  http://localhost:30003/api/mail/signature
+<br>Get user's specific signature<br>
+Requirements for request:<br>
+<b><i>Authorization Bearer Token</i></b><br>
+Fields: <b><i>id</i></b><br>
+<br><br>
+- (DELETE)  http://localhost:30003/api/mail/signature
+<br>Remove user's specific signature<br>
+Requirements for request:<br>
+<b><i>Authorization Bearer Token</i></b><br>
+Fields: <b><i>id</i></b><br>
+<br><br>
