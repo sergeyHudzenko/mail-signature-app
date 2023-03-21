@@ -43,7 +43,8 @@ What's done:
 # API
 <br>
 <br>
-- (GET)  http://localhost:30001/api/profile/user Recieving user <br>
+- (GET)  http://localhost:30001/api/profile/user 
+<u>Recieving user</u> <br><br>
 Requirements for request:<br>
 <b><i>Authorization Bearer Token</i></b>
 
