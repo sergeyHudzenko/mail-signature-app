@@ -24,3 +24,18 @@ What's done:
 <ol>mail-service - available at  <a href="http://localhost:30003">localhost:30003</a></ol>
 </ul> 
 <small>(Yes I know I could have used <b>NGNIX ingress</b> for traffic management, but I had no time to set it up (although it is not hard) and I expose my endpoints at the very last moment</small>
+
+<br>
+<br>
+<br>
+
+# Structure
+<br>
+<br>
+- src/abstract - files where abstract classes are located
+- src/components - components for building APIs. Each class must extend the BaseApi class. It contains the necessary methods for building the API
+- src/config - This is where the class with the application configurations is located
+- src/database - This is where the class for working with the database is located. It implements the Singleton pattern, initializes connections and the initial migration required for the service
+- src/lib - This is the directory where you can find useful classes for simplifying the system. 
+- src/models - a class for working with the database
+- src/utils - helper classes
