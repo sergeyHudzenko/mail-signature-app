@@ -1,0 +1,45 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mail-service-deployment
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: mail-service
+  template:
+    metadata:
+      labels:
+        app: mail-service
+    spec:
+      containers:
+        - name: mail-service
+          image: sergey/mail-service
+          env:
+            - name: POSTGRES_USER
+              value: "postgres"
+            - name: POSTGRES_PASSWORD
+              value: "password"
+            - name: POSTGRES_DATABASE 
+              value: "mailing"
+            - name: POSTGRES_HOST
+              value: "postgresql"
+            - name: JWT_SECRET
+              value: "secret"
+          ports:
+            - name: http
+              containerPort: 3146
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: mail-service
+spec:
+  selector:
+    app: mail-service
+  ports:
+    - name: http
+      port: 80
+      targetPort: 3146
+      nodePort: 30003
+  type: NodePort

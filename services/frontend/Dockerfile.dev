@@ -1,0 +1,9 @@
+FROM node:alpine
+RUN mkdir /app
+WORKDIR /app
+COPY package.json .
+RUN npm install --force
+EXPOSE 8080
+COPY . .
+
+CMD ["npm", "run", "serve"]
