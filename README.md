@@ -39,3 +39,11 @@ What's done:
 - src/lib -- This is the directory where you can find useful classes for simplifying the system. <br>
 - src/models -- a class for working with the database<br>
 - src/utils -- helper classes<br>
+
+# API
+<br>
+<br>
+- (GET)  http://localhost:30001/api/profile/user Recieving user <br>
+Requirements for request:<br>
+<b><i>Authorization Bearer Token</i></b>
+
