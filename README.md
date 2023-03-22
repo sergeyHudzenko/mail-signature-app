@@ -39,6 +39,7 @@ What's done:
 - src/lib -- This is the directory where you can find useful classes for simplifying the system. <br>
 - src/models -- a class for working with the database<br>
 - src/utils -- helper classes<br>
+- src/templates -- email templates 
 
 # API
 <br>
